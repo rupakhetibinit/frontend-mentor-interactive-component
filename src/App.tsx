@@ -34,6 +34,7 @@ function App() {
 						<div className='flex flex-row items-center justify-between mb-6'>
 							{ratings.map((r) => (
 								<div
+									key={r}
 									onClick={() => setRating(r)}
 									className={`cursor-pointer flex justify-center items-center w-12 h-12 rounded-full bg-gray-600 hover:bg-orange-500 ${
 										r === rating ? 'bg-orange-500' : ''
